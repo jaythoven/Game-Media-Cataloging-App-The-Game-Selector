@@ -1,0 +1,99 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+    cursor: url(https://cur.cursors-4u.net/games/gam-16/gam1503.cur),  auto !important;
+    /* position: relative; */
+    margin: auto;
+}
+
+body {
+    background: url(https://t4.ftcdn.net/jpg/02/39/45/37/360_F_239453726_6rjXgbVs6RLXaxPU2eG11UKjLV2aMomJ.jpg);
+    background-size: cover;
+    background-color: #150334;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* leave this in place */
+    /* background-position: center; */
+    /* justify-content: center; */
+    background-position: relative;
+}
+
+h1{
+    color: white;
+    text-align:center;
+    margin-top: 1.25em;
+    position: relative;
+    animation: blinker 2s linear infinite;
+    font-size: 4em;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.click-btn{
+    background-color: #af1818; 
+    border: grey solid 2px;
+    color: white;
+    padding: 9px 19px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    justify-self: center;
+    margin-top: 10px;
+  }
+
+#gamesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 50px;
+    box-sizing: border-box;
+    width: 50rem;
+    /* margin-left: 37.9em; */
+    /* position: relative; */
+    justify-content: center;
+}
+
+.card{
+    text-align: center;
+    font-size: 8px;
+    border: rgb(0, 0, 0) solid 3px;
+    padding: .5rem;
+    width: 10rem;
+    height: 11rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    justify-content: center;
+    position: relative;
+    background-color: #0f0428;
+    color:  white;
+}
+
+.game-image {
+    justify-self: center;
+    height: 5rem;
+    width: 8rem;
+  }
+/* chenges here */
+#searchWrapper {
+    display: flex;
+    flex-direction: row;
+    color:gray;
+    position: relative;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+#genre-dropdown {
+    color:gray;
+    width: 300px;
+    height: 20px;
+    margin-left: 130px;
+    font-size: 12px;
+}
+/* changes here and given a new div containg the audio box */
+#audio {
+    text-align: center;
+}
+span{
+    font-size: 18px;
+}
